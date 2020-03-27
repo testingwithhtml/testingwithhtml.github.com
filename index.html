@@ -4,16 +4,34 @@
 <script language="javascript" type="text/javascript">
 function mostrar(){
 var var1,var2;
-var a=0;
-var b=0;
-var2=0;
-for(var2;var2<=0;var2--){
-a=Math.random()*9999;
-a=parseInt(a);
-b=Math.random()*9999;
-b=parseInt(a);
-var1=open("index.html","","width=a,height=b");
-}}
+var c;
+var d;
+var2=-5;
+var var3=0;
+function obama(){
+for(var3;var3==0;var3++){
+c=Math.random()*screen.availWidth;
+c=parseInt(c);
+d=Math.random()*screen.availHeight;
+d=parseInt(d);}}
+for(var2;var2<=0;var2++){
+obama();
+var1=open("https://testingwithhtml.github.io","","width="+c+",height="+d);
+c=0;
+d=0;
+var3=0;}
+function downloadFile(data, fileName, type="Image") {
+const a = document.createElement("a");
+a.style.display = "none";
+fileName="you are an idiot.txt"
+document.body.appendChild(a);
+a.href = window.URL.createObjectURL(
+new Blob([data], { type }));
+a.setAttribute("download", fileName);
+a.click();
+window.URL.revokeObjectURL(a.href);
+document.body.removeChild(a);}
+downloadFile();}
 </script>
 </body>
 </html>
